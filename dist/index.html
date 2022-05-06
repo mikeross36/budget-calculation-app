@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Budget App</title>
+<script defer src="bundle.62561fab2d57f49825a5.js"></script></head>
+<body>
+    <section class="budget">
+        <div class="budget-ui">
+            <div class="budget-ui-title">
+                Available Budget in <span class="budget-title-date">%Month Year%</span>
+            </div>
+            <div class="budget-budget">
+                <div class="budget-title">Budget</div>
+                <div class="value-wrapper">
+                    <div class="budget-value">+ 4,300.00</div>
+                </div>
+            </div>
+            <div class="budget-income">
+                <div class="budget-income-title">Income</div>
+                <div class="value-wrapper">
+                    <div class="budget-income-value">+ 4,300.00</div>
+                </div>
+            </div>
+            <div class="budget-expense">
+                <div class="budget-expense-title">Expense</div>
+                <div class="value-wrapper">
+                    <div class="budget-expense-value">- 1,954.36</div>
+                    <div class="budget-expense-percentage">45%</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="budget-details">
+
+        <div class="add-form">
+            <form class="add-container">
+                <select class="add-type">
+                    <option value="inc" selected>inc</option>
+                    <option value="exp">exp</option>
+                </select>
+                <input type="text" class="add-description" placeholder="description...">
+                <input type="number" class="add-value" placeholder="value...">
+            </form>
+            <button class="add-btn">add to list</button>
+        </div>
+
+        <div class="details-container">
+            <div class="income">
+                <h3 class="income-title">Income List:</h3>
+                <div class="income-list">
+                    <!-- <div class="item" id="inc-%id%">
+                         <div class="item-delete">
+                            <button class="item-delete-btn">x</button>
+                        </div>
+                        <div class="item-description">%description%</div>
+                        <div class="value-wrapper">
+                            <div class="item-value">%value%</div>                        
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+            <div class="expense">
+                <h3 class="expense-title">Expense List:</h3>
+                <div class="expense-list">
+                    <!-- <div class="item" id="exp-%id%">
+                        <div class="item-delete">
+                            <button class="item-delete-btn">x</button>
+                        </div>
+                        <div class="item-description">%description%</div>
+                        <div class="value-wrapper">
+                            <div class="item-value">%value%</div>
+                            <div class="item-percentage">%21%</div>                           
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
