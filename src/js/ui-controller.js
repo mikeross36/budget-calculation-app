@@ -19,15 +19,18 @@ const uiController = (()=> {
 
     const formatNumber = (num, type) => {
         let splitNum, int, dec;
-        num = Math.abs(num)
-        num = num.toFixed(2)
-        splitNum = num.split(".")
-        int = splitNum[0]
-        dec = splitNum[1]
-        if(int.length > 3){
-            int = `${int.substr(0, int.length -3)},${int.substr(int.length -3, 3)}`
+        addDecimal()
+        
+        function addDecimal() {
+            num = Math.abs(num).toFixed(2)
+            splitNum = num.split(".")
+            int = splitNum[0]
+            dec = splitNum[1]
         }
-        const newNum = `${type === "exp" ? "-" : "+"} ${int},${dec}`;
+        if (int.length > 3) {
+            int = `${int.substr(0, int.length - 3)},${int.substr(int.length - 3, 3)}`
+        }
+        let newNum = `${type === "exp" ? "-" : "+"} ${int}.${dec}`;
         return newNum;
     };
 
